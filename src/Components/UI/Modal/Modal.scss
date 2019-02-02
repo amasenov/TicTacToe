@@ -1,0 +1,46 @@
+.modal{
+    position: fixed;
+    
+    width: 400px;
+    height: auto;
+    
+    left: calc(50% - 200px);
+    top: 50%;
+    transform: translate(0, -50%);
+    
+    padding: 50px;
+    z-index: 500;
+    background-color: #fefefe;
+    color: #16161d;
+
+    border: 0;
+    border-radius: 3px;
+}
+
+.backdrop{
+
+    display: none;
+
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+
+    left: 0;
+    top: 0;
+
+    z-index: 500;
+
+    background-color: rgba(0,0,0,0.5);
+}
+
+.open{
+    display: block;
+}
+
+@media (min-width: 600px) {
+    .modal {
+        width: 580px;
+        left: calc(50% - 290px);
+    }
+}
